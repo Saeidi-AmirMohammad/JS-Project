@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSProject-1</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vazir-font/30.0.0/font-face.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form">
+      <input id="input-textbox" type="text" placeholder="زمان مورد نظر خود را به ثانیه وارد کنید">
+      <button id="start-btn">شروع</button>
+    </div>
+
+    <span id="error-message">*لطفا مقدار ثانیه را درست وارد کنید</span>
+
+    <div class="set-size charts-container">
+      <div class="pie-wrapper progress-60">
+        <span class="label">60</span>
+        <div class="pie">
+          <div class="left-side half-circle"></div>
+          <div class="right-side half-circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="message">
+      <span class="loading">در حال اجرا ...</span>
+      <span class="success">با موفقیت به پایان رسید</span>
+    </div>
+  </div>
+</body>
+<script src="./js/main.js"></script>
+</html>

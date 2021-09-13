@@ -1,0 +1,115 @@
+html,
+body {
+  direction: rtl;
+  font-family: "Vazir";
+  font-size: 100%;
+  background-color: black;
+  color: #eee;
+}
+
+header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+section#main {
+  text-align: center;
+}
+
+div.nowplaying {
+  font-size: 7rem;
+  font-weight: bold;
+  text-shadow: 0 0 5rem #028ae9;
+  transition: all 0.07s ease;
+}
+
+div.keys {
+  margin: 0 auto;
+  max-width: 900px;
+  height: 350px;
+  display: flex;
+  direction: ltr;
+  position: relative;
+  
+}
+
+div.keys:hover div.key span{
+  opacity: 1;
+  color: #028ae9;
+}
+
+div.key:not(.sharp) {
+  color: black;
+  width: 10%;
+  height: calc(100% - 8px);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 4px solid black;
+  border-radius: 0.5rem;
+  position: relative;
+  transition: all 0.07s ease;
+}
+
+div.key span{
+  position: absolute;
+  bottom: 4%;
+  left: 45%;
+  opacity: 0;
+  transition: all .3s ease-out;
+  font-size: 20px;
+}
+
+div.key.sharp span{
+  position: absolute;
+  bottom: 4%;
+  left: 39%;
+  opacity: 0;
+  transition: all .3s ease-out;
+  font-size: 20px;
+}
+
+div.key.sharp{
+  position: absolute;
+  top: 0;
+  width: 6%;
+  height: 60%;
+  background-color: black;
+  border: 4px solid black;
+  border-radius: 0.5rem;
+  z-index: 1;
+  transition: all 0.07s ease;
+}
+
+.active{
+  transform: scale(.95);
+  border-color: #028ae9 !important;
+  text-shadow: 0 0 1rem #028ae9 !important;
+}
+
+div.key[data-key="87"]{
+  left: 6.7%;
+}
+
+div.key[data-key="69"]{
+  left: 16.7%;
+}
+
+div.key[data-key="84"]{
+  left: 36.7%;
+}
+
+div.key[data-key="89"]{
+  left: 46.7%;
+}
+
+div.key[data-key="85"]{
+  left: 56.7%;
+}
+
+div.key[data-key="79"]{
+  left: 76.7%;
+}
+
+div.key[data-key="80"]{
+  left: 86.7%;
+}

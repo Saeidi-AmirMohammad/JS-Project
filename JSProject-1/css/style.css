@@ -1,0 +1,143 @@
+html,
+body {
+  direction: rtl;
+  font-family: "Vazir";
+  font-size: 100%;
+}
+
+div.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div.message span.success {
+  display: none;
+  color: rgb(31, 199, 31);
+}
+
+div.message span.loading {
+  color: #9b59b6;
+  display: none;
+}
+
+div.form {
+  display: flex;
+}
+
+div.form button {
+  background-color: #9b59b6;
+  color: wheat;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.7rem;
+  font-family: "Vazir";
+  border-radius: 7px;
+  margin-right: 5px;
+}
+
+div.form button:hover {
+  background-color: #be89d3;
+  transition: all 0.5s ease;
+}
+
+div.form input {
+  font-family: "Vazir";
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+  outline: none;
+  width: 17rem;
+  padding: 0.5rem;
+}
+
+span#error-message {
+  margin: 1rem 0;
+  color: rgb(231, 58, 58);
+  display: none;
+}
+
+span#error-message.active {
+  display: block;
+}
+
+/* -------------- ProgressBar Style --------------- */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.set-size {
+  font-size: 10em;
+}
+
+.charts-container:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.pie-wrapper {
+  height: 1em;
+  width: 1em;
+  margin: 15px;
+  position: relative;
+  display: none;
+}
+.pie-wrapper:nth-child(3n + 1) {
+  clear: both;
+}
+.pie-wrapper .pie {
+  height: 100%;
+  width: 100%;
+  clip: rect(0, 1em, 1em, 0.5em);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.pie-wrapper .pie .half-circle {
+  height: 100%;
+  width: 100%;
+  border: 0.1em solid #3498db;
+  border-radius: 50%;
+  clip: rect(0, 0.5em, 1em, 0);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.pie-wrapper .label {
+  background: #34495e;
+  border-radius: 50%;
+  bottom: 0.4em;
+  color: #ecf0f1;
+  cursor: default;
+  display: block;
+  font-size: 0.25em;
+  left: 0.4em;
+  line-height: 3.3em;
+  position: absolute;
+  right: 0.4em;
+  text-align: center;
+  top: 0.4em;
+}
+.pie-wrapper .label .smaller {
+  color: #bdc3c7;
+  font-size: 0.45em;
+  padding-bottom: 20px;
+  vertical-align: super;
+}
+
+.pie-wrapper.progress-60 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-60 .pie .half-circle {
+  border-color: #9b59b6;
+}
+.pie-wrapper.progress-60 .pie .left-side {
+  transform: rotate(216deg);
+}
+.pie-wrapper.progress-60 .pie .right-side {
+  transform: rotate(180deg);
+}

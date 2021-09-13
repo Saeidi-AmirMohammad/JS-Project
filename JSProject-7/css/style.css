@@ -1,0 +1,69 @@
+html,
+body {
+  direction: rtl;
+  font-family: "Vazir";
+  margin: 0;
+  background-color: rgb(38, 38, 77);
+  color: rgb(245, 192, 17);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.sliders{
+  max-width: 1100px;
+  margin: auto;
+}
+
+.sliders .slider{
+  position: relative;
+  display: none;
+}
+
+.sliders .slider .description{
+  position: absolute;
+  bottom: 13%;
+  right: 8%;
+  z-index: 1;
+
+}
+
+.sliders .slider .number-slide{
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  padding: .5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.next-btn , .prev-btn{
+position: absolute;
+padding: .2rem .6rem;
+cursor: pointer;
+}
+
+.next-btn:hover , .prev-btn:hover{
+background-color: rgba(0, 0, 0, 0.3);
+  }
+
+.next-btn{
+  right: 5%;
+  bottom: 43%;
+}
+
+.prev-btn{
+  left: 5%;
+  bottom: 43%;
+}
+
+.active{
+  display: block !important;
+}
+

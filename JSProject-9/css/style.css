@@ -1,0 +1,32 @@
+html,
+body {
+  font-family: "Vazir";
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery{
+  display: flex;
+}
+
+.sidebar-image{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+
+.sidebar-image img{
+  width: 500px;
+  height: 222.45555px;
+}
+
+.zoomed-image{
+  flex-basis: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}

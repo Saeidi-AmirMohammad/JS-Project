@@ -1,0 +1,21 @@
+html,
+body {
+  direction: rtl;
+  font-family: "Vazir";
+  margin: 0;
+  background-color: rgb(38, 38, 77);
+  color: rgb(245, 192, 17);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#score{
+  font-size: 5rem;
+}
+
+.game-box{
+text-align: center;
+}

@@ -1,0 +1,17 @@
+html,
+body {
+  direction: rtl;
+  font-family: "Vazir";
+  font-size: 1.3rem;
+  background-color: black;
+  color: #eee;
+  margin: 0;
+}
+
+div.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
