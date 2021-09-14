@@ -90,7 +90,7 @@ function advanceSnake() {
 
 function drawSnake() { return snake.forEach(drawSnakePart) }
 function drawSnakePart(snakePart) {   
-    ctx.fillStyle = 'lightgreen';
+    ctx.fillStyle = '#00FA9A';
     ctx.strokeStyle = 'black'
 
     ctx.fillRect(snakePart.x , snakePart.y , 10 , 10);

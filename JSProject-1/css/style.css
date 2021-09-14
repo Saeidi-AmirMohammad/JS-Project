@@ -18,7 +18,7 @@ div.message span.success {
 }
 
 div.message span.loading {
-  color: #9b59b6;
+  color: #da619d;
   display: none;
 }
 
@@ -27,7 +27,7 @@ div.form {
 }
 
 div.form button {
-  background-color: #9b59b6;
+  background-color: #da619d;
   color: wheat;
   border: none;
   outline: none;
@@ -38,7 +38,7 @@ div.form button {
 }
 
 div.form button:hover {
-  background-color: #be89d3;
+  background-color: #da619d;
   transition: all 0.5s ease;
 }
 
@@ -133,7 +133,7 @@ span#error-message.active {
   clip: rect(auto, auto, auto, auto);
 }
 .pie-wrapper.progress-60 .pie .half-circle {
-  border-color: #9b59b6;
+  border-color: #da619d;
 }
 .pie-wrapper.progress-60 .pie .left-side {
   transform: rotate(216deg);

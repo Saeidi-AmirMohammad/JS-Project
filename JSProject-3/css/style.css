@@ -20,7 +20,7 @@ section#main {
 div.nowplaying {
   font-size: 7rem;
   font-weight: bold;
-  text-shadow: 0 0 5rem #028ae9;
+  text-shadow: 0 0 5rem #e90289;
   transition: all 0.07s ease;
 }
 
@@ -36,7 +36,7 @@ div.keys {
 
 div.keys:hover div.key span{
   opacity: 1;
-  color: #028ae9;
+  color: #e90289;
 }
 
 div.key:not(.sharp) {
@@ -82,8 +82,8 @@ div.key.sharp{
 
 .active{
   transform: scale(.95);
-  border-color: #028ae9 !important;
-  text-shadow: 0 0 1rem #028ae9 !important;
+  border-color: #e90289 !important;
+  text-shadow: 0 0 1rem #e90289 !important;
 }
 
 div.key[data-key="87"]{
