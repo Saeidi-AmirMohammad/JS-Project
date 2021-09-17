@@ -1,1 +1,1 @@
-(()=>{"use strict";const e=new class{render(){const e=document.createElement("div");return e.classList.add("image-box"),e.innerHTML="saeidiAmirmohammad",e}};document.querySelector("#id").appendChild(e.render())})();
+(()=>{"use strict";const e=new class{createTextTag(){const e=document.createElement("p");return e.innerHTML="سلام امیر محمد سعیدی",e}render(){const e=document.createElement("div");return e.classList.add("image-box"),e.innerHTML="saeidiAmirmohammad",e.appendChild(this.createTextTag()),e}};document.querySelector("#id").appendChild(e.render())})();
