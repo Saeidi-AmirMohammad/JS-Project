@@ -1,1 +1,1 @@
-console.log("amirreza"),console.log("saeidi");
+(()=>{"use strict";const e=new class{render(){const e=document.createElement("div");return e.classList.add("image-box"),e.innerHTML="saeidiAmirmohammad",e}};document.querySelector("#id").appendChild(e.render())})();
