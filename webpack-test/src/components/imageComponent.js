@@ -1,3 +1,4 @@
+// import from 'lodash';
 
 class imageComponent{
 

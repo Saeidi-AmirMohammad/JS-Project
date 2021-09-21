@@ -6,8 +6,7 @@
   "scripts": {
     "build:prod": "webpack --config webpack.prod.config.js",
     "build:dev": "webpack --config webpack.dev.config.js",
-    "watch" :"webpack-dev-server --config webpack.dev.config.js"
-
+    "watch": "webpack-dev-server --config webpack.dev.config.js"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +20,8 @@
     "webpack": "^5.52.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
