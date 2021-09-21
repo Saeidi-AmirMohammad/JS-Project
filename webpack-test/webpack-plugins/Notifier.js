@@ -7,7 +7,10 @@ class Notifier {
         compiler.hooks.done.tap('notification' , (stats) => {
             let time = ((stats.endTime - stats.startTime) / 1000).toFixed(2)
 
-            Notifier.
+            notifier.notify({
+                title : 'Webpack',
+                message : `webpack is done in ${time}`
+            })
         })
     }
 }
