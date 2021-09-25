@@ -1,8 +1,7 @@
-let num1 : number | null = 3;
-num1 = null;
-
-function log(entry : string) :void {
-console.log(entry)
+enum Name {
+    Jason =3,
+    Bill ,
+    Jack = 70,
+    Rock
 }
-
-log('Saeidi');
+console.log(Name)
