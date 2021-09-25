@@ -1,5 +1,7 @@
 "use strict";
-var fullname = 'SaeidiAmirMohammad';
-var num = 12;
-var bool = false;
-var list = ['ahamd', 'reza', 'amir'];
+var num1 = 3;
+num1 = null;
+function log(entry) {
+    console.log(entry);
+}
+log('Saeidi');
