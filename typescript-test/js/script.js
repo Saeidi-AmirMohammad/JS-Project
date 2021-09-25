@@ -1,9 +1,13 @@
 "use strict";
-var Name;
-(function (Name) {
-    Name[Name["Jason"] = 3] = "Jason";
-    Name[Name["Bill"] = 4] = "Bill";
-    Name[Name["Jack"] = 70] = "Jack";
-    Name[Name["Rock"] = 71] = "Rock";
-})(Name || (Name = {}));
-console.log(Name);
+function sum(x, y) {
+    return x + y;
+}
+var sum2 = function (x, y) {
+    return x + y;
+};
+var sum3 = function (x, y) { return x + y; };
+console.log(sum(3, 7));
+var sum4;
+sum4 = function (x, y) {
+    return x + y;
+};
