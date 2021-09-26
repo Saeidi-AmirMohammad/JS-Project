@@ -1,11 +1,13 @@
-type MyObject = {
-    fullname : string,
-    age : (num : number) => string
+class Car {
+    model : string
+    year : number
+
+    constructor(model : string , year : number){
+        this.model = model,
+        this.year = year
+
+    }
 }
 
-let person : MyObject = {
-    fullname : 'AmirSaeidi',
-    age : (num : number) => {
-        return `age : ${num}`
-    }
-};
+let car01 = new Car('x5' , 2020)
+console.log(car01)
