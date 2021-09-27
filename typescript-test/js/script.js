@@ -1,12 +1,10 @@
 "use strict";
 var Car = /** @class */ (function () {
     function Car(model, year) {
-        Car.model = model,
+        this.model = model,
             this.year = year;
     }
-    Car.getModel = function () {
-        return Car.model;
-    };
     return Car;
 }());
-console.log(Car.getModel());
+var car01 = new Car('111', 1397);
+console.log(car01.model);
