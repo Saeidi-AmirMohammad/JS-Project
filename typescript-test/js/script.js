@@ -1,14 +1,9 @@
 "use strict";
-var Car = /** @class */ (function () {
-    function Car() {
-    }
-    Car.getInstance = function () {
-        if (!Car.instance)
-            Car.instance = new Car();
-        return Car.instance;
-    };
-    return Car;
-}());
-var car01 = Car.getInstance();
-var car02 = Car.getInstance();
-console.log(car01 === car02);
+function printLabel(labelObj) {
+    console.log(labelObj.label);
+}
+function labelX(labelObj) {
+    console.log(labelObj.size);
+}
+var myObj = { size: 10, label: 'Size 7', number: 123 };
+var myObj2 = { size: 15, label: 'Size 10' };
