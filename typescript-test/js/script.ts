@@ -1,14 +1,19 @@
 class Car {
-   readonly model : string  
-   public year : number
+private static instance : Car
 
-    constructor(model : string , year : number){
-        this.model = model,
-        this.year = year
+    private constructor() {}
 
+    static getInstance() : Car{
+        if(! Car.instance)
+        Car.instance = new Car()
+
+        return Car.instance;
     }
 
 }
 
-let car01 = new Car ('111' , 1397)
-console.log(car01.model);
+let car01 = Car.getInstance();
+let car02 = Car.getInstance();
+
+console.log(car01 === car02)
+
