@@ -1,16 +1,19 @@
-function auth<T extends {new (...arg : any[])}>(constractor : T){
-    console.log(constractor)
-    return class extends constractor{
-        auth = false
+function Emoji(){
+    return function(target : Object , key : string  | symbol){
+        let val = target[key]
+
+        Object.defineProperty(target , key , {
+            get : () => val,
+            set : (newVal) => {
+                val = `${newVal}`
+            },
+            configurable : true,
+            enumerable : true
+        })
     }
 }
 
-@auth
-class User {
-    name = 'Saeidi'
-    constructor(public message : string) {}
-
+classIceCream{
+    @Emoji()
+    flavor = "Vanilla"
 }
-
-let user = new User ("AmirSaeidi");
-console.log(user)
