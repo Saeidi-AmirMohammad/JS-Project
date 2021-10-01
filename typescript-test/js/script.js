@@ -1,17 +1,46 @@
 "use strict";
-var myArry = /** @class */ (function () {
-    function myArry(data, data2) {
-        this.data = data;
-        this.data2 = data2;
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+function auth(constractor) {
+    console.log(constractor);
+    return /** @class */ (function (_super) {
+        __extends(class_1, _super);
+        function class_1() {
+            var _this = _super !== null && _super.apply(this, arguments) || this;
+            _this.auth = false;
+            return _this;
+        }
+        return class_1;
+    }(constractor));
+}
+var User = /** @class */ (function () {
+    function User(message) {
+        this.message = message;
+        this.name = 'Saeidi';
     }
-    myArry.prototype.addItem = function (item) {
-        this.data.push(item);
-    };
-    myArry.prototype.getItem = function (index) {
-        return this.data[index];
-    };
-    return myArry;
+    User = __decorate([
+        auth
+    ], User);
+    return User;
 }());
-var list = new myArry(['item1', 'item2'], [true, false]);
-list.addItem('4');
-console.log(list.getItem(0));
+var user = new User("AmirSaeidi");
+console.log(user);
